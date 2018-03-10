@@ -1,3 +1,59 @@
-h1 {
-  color: pink;
+/* Universal Styles */
+
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4;
+}
+
+.container {
+  margin: auto;
+}
+
+/*header*/
+.logo, nav, ul {
+  display: flex;
+}
+
+.logo, nav, ul {
+  align-items: center;
+}
+
+header {
+  padding: 24px;
+  max-height: 64px;
+  border: 2px solid black;
+}
+
+.logo {
+  height: 32px;
+  border: 2px solid black;
+}
+
+.col {
+  color: blue;
+}
+
+.academy {
+  color: gray;
+}
+
+nav {
+  color: blue;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+ul {
+  font-size: 0.7rem;
+  color:red;
+  border: 2px solid black;
+}
+
+li {
+  padding-left: 16px;
+  border: 1px solid red;
 }
