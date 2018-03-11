@@ -37,7 +37,6 @@ header {
 }
 
 nav {
-
   justify-content: space-between;
 }
 
@@ -95,13 +94,33 @@ h1 {
 
 }
 
-/*banner-2*/
+/*section-1*/
 
-.banner-2 {
+.section {
   background-color: white;
+  display: flex;
+  align-items: center;
+  border: 3px solid black;
 }
 
-.orientation {
-  
-  overflow: hidden;
+.image-section {
+  width: 60%;
+  padding: 24px;
+  border: 1px solid black;
+}
+
+.container-section {
+  width: 40%;
+  padding: 24px;
+  border: 2px solid red;
+}
+
+.box-section {
+  display: flex;
+
+  border: 2px solid orange;
+}
+
+.small-image {
+  border: 1px solid green;
 }
