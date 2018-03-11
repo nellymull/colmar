@@ -6,10 +6,6 @@ html {
   background-color: white;
 }
 
-body {
-  line-height: 1.4;
-}
-
 .container {
   margin: auto;
 }
@@ -33,19 +29,21 @@ header {
 
 .col {
   font-weight: 600;
+  color: #333333;
 }
 
 .academy {
-  color: gray;
+  color: #e3e3e3;
 }
 
 nav {
-  color: #0E0F11;
+
   justify-content: space-between;
 }
 
 li {
   padding-left: 16px;
+  color: #333333;
 }
 
 .mobile-menu {
@@ -68,10 +66,42 @@ li {
 
 /*banner*/
 
-.image-1 {
+.banner {
+  background-color: #d3d3d3;
   display: flex;
+  align-items: center;
+}
+
+.image-1 {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.info-1{
+  color: #333333;
 }
 
 h1 {
   font-size: 2rem;
+  width: 40%;
+}
+
+.banner-button {
+  color: white;
+  background-color: blue;
+}
+.button-p {
+  padding: 8px;
+
+}
+
+/*banner-2*/
+
+.banner-2 {
+  background-color: white;
+}
+
+.orientation {
+  
+  overflow: hidden;
 }
