@@ -15,14 +15,6 @@ h1, h2, h3 {
   font-family: 'Archivo Black', sans-serif;
 }
 
-h1, h2 {
-  padding: 32px 15px;
-}
-
-h3, p {
-  padding:10px 15px 5px 10px;
-}
-
 h1 {
   font-size: 1.7rem;
   font-weight: 900;
@@ -67,7 +59,6 @@ header {
   font-size: 1rem;
 }
 
-
 .col {
   font-weight: 600;
   color: #333333;
@@ -104,13 +95,13 @@ li {
   }
 }
 
-/*section classes*/
-.section {
+/*shared rules*/
+.banner, .section {
   display: flex;
   align-items: center;
 }
 
-.section1 {
+.banner1, .section1 {
   max-width: 60%;
   max-height: 700px;
   overflow: hidden;
@@ -118,22 +109,18 @@ li {
   border: 3px border green;
 }
 
-.section1-img {
+.banner1-img, .section1-img {
   max-width: 100%;
   display: block;
   height: auto;
   display: block;
 }
 
-.section1-box {
+.banner1-box, .section1-box {
   border: 1px solid blue;
 }
 
-.section1-box-2 {
-}
-
-
-.section2 {
+.banner2, .section2 {
   padding: 32px 16px;
   border: 3px border green;
   width: 40%;
@@ -143,7 +130,7 @@ li {
   align-content: space-between;
 }
 
-.section2-box {
+.banner2-box, .section2-box {
   border: 2px solid gray;
   display: flex;
   margin: 1px;
@@ -162,22 +149,73 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
-.back-gray {
-  background-color: #d3d3d3;
-}
-
-
-/*banner*/
-.section2-main {
+/*banner only*/
+.banner2-main {
   width: 25%;
 }
 .banner-button {
   color: white;
   background-color: blue;
 }
-.button-p {
+.banner-btn-p {
   padding: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner, .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section1 {
+    display: none;
+  }
+
+  .banner1, {
+    max-width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .banner1-img, .section1-img {
+    width: 100%;
+  }
+
+
+
+  .banner2, .section2 {
+    padding: 32px 16px;
+    border: 3px border green;
+    width: 40%;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  .banner2-box, .section2-box {
+    border: 2px solid gray;
+    display: flex;
+    margin: 1px;
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+  }
+
+  .section2-img {
+    width: 35%;
+    height: auto;
+    display: block;
+  }
+
+  .p-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
 }
