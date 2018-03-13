@@ -102,11 +102,10 @@ li {
 }
 
 .banner1, .section1 {
-  max-width: 60%;
-  max-height: 700px;
+  max-width: 60rem;
+  max-height: 55rem;
   overflow: hidden;
   padding: 32px 24px;
-  border: 3px border green;
 }
 
 .banner1-img, .section1-img {
@@ -116,18 +115,20 @@ li {
   display: block;
 }
 
-.banner1-box, .section1-box {
-  border: 1px solid blue;
-}
+
 
 .banner2, .section2 {
   padding: 32px 16px;
   border: 3px border green;
-  width: 40%;
-  max-height: 700px;
+  max-height: 400px;
   display: flex;
   flex-direction: column;
   align-content: space-between;
+}
+
+/*move .section2 to section2 when created*/
+.section2 {
+  width: 40rem;
 }
 
 .banner2-box, .section2-box {
@@ -135,7 +136,7 @@ li {
   display: flex;
   margin: 1px;
   width: 100%;
-  max-height: 200px;
+  max-height: 33em;
   overflow: hidden;
 }
 
@@ -152,9 +153,7 @@ li {
 }
 
 /*banner only*/
-.banner2-main {
-  width: 25%;
-}
+
 .banner-button {
   color: white;
   background-color: blue;
@@ -163,59 +162,44 @@ li {
   padding: 8px;
 }
 
+
 @media only screen and (max-width: 600px) {
-  .banner, .section {
+  body{
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: lighter;
+  }
+
+  .banner {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
+
+  .banner1 {
+    padding: 0;
+  }
+
+  .banner2 {
+
+  }
+  .banner2-box, {
+
+  }
+
+
 
   .section1 {
     display: none;
   }
-
-  .banner1, {
-    max-width: 100%;
-    max-height: 700px;
-    overflow: hidden;
-    padding: 0;
-  }
-
-  .banner1-img, .section1-img {
-    width: 100%;
-  }
-
-
-
-  .banner2, .section2 {
-    padding: 32px 16px;
-    border: 3px border green;
-    width: 40%;
-    max-height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-  }
-
-  .banner2-box, .section2-box {
-    border: 2px solid gray;
-    display: flex;
-    margin: 1px;
-    width: 100%;
-    max-height: 200px;
-    overflow: hidden;
-  }
-
-  .section2-img {
-    width: 35%;
-    height: auto;
-    display: block;
-  }
-
-  .p-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-}
