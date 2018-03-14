@@ -279,3 +279,31 @@ li {
     width: 100%;
   }
 } /*end @media Container1*/
+
+/*Containerii*/
+.ii-h1 {
+  text-align: center;
+}
+
+.ii-section {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ii-box {
+  max-width: 20rem;
+  max-height: 40rem;
+}
+
+.ii-img-box {
+  width: 15rem;
+  max-height: 10rem;
+  overflow: hidden;
+}
+
+.ii-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
