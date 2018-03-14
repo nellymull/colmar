@@ -285,20 +285,25 @@ li {
   text-align: center;
 }
 
+
+
+
 .ii-section {
-  overflow: hidden;
   display: flex;
+  justify-content: space-around;
+
   flex-wrap: wrap;
+  padding: 6rem;
 }
 
 .ii-box {
   max-width: 20rem;
-  max-height: 40rem;
+  max-height: 39rem;
 }
 
 .ii-img-box {
-  width: 15rem;
-  max-height: 10rem;
+
+  max-height: 7.5rem;
   overflow: hidden;
 }
 
@@ -306,4 +311,13 @@ li {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.ii-p {
+  padding: 1rem;
+  background-color: white;
+}
+
+.ii-p-art {
+  line-height: .5;
 }
