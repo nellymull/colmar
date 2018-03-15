@@ -321,3 +321,13 @@ li {
 .ii-p-art {
   line-height: .5;
 }
+
+/*container3*/
+video {
+  position: absolute;
+  width: 40rem;
+}
+
+.iii-section-2 {
+  position: relative;
+}
