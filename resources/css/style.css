@@ -350,6 +350,10 @@ li {
     border: .25rem solid white;
     padding: 1.2rem;
   }
+
+  .ii-h3-mobile:hover {
+    background-color: #5877AD;
+  }
 }
 
 /*containeriii*/
