@@ -153,6 +153,9 @@ li {
 }
 .banner-btn-p {
   padding: 8px;
+  transition-property: box-shadow;
+  transition-duration: 1s;
+  transition-delay: 0.5ms;
 }
 
 .banner-btn-p:hover {
