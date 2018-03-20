@@ -150,7 +150,20 @@ li {
   color: white;
   background-color: #505050;
   text-align: center;
+  position: relative;
+  -webkit-animation: mymove 4s;
+  -webkit-animation-delay: 3ms; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s;
+  animation-delay: 500ms;
+  animation-fill-mode:
 }
+
+@-webkit-keyframes mymove {
+    from {bottom: 40px; background-color: #5877AD;}
+    to {bottom: 200px; background-color: #d7d7d7;}
+}
+
 .banner-btn-p {
   padding: 8px;
   transition-property: box-shadow;
@@ -197,7 +210,7 @@ li {
   .banner1 {
     width: 100%;
     max-height: 20rem;
-    padding: 0
+    padding: 0;
   }
 
 
@@ -212,9 +225,10 @@ li {
 /*container1*/
 .background1 {
   background-image: url("../images/information-main.jpg");
-
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-.section1 .section2 {
+ .section2 {
   padding: 24px 32px;
 
 }
@@ -234,7 +248,7 @@ li {
 .section1-box {
   background-color: #d7d7d7;
   border: 2px solid #d7d7d7;
-  box-shadow: 3px 3px 7px 7px white;
+  box-shadow: 3px 3px  white;
 }
 
  .section1-img {
@@ -340,7 +354,7 @@ li {
   max-width: 20rem;
   max-height: 39rem;
   border: 2px solid #d7d7d7;
-  box-shadow: 5px 5px 10px 10px white;
+  box-shadow: 10px 10px white;
 }
 
 .ii-img-box {
