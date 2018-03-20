@@ -210,8 +210,13 @@ li {
 
 
 /*container1*/
+.background1 {
+  background-image: url("../images/information-main.jpg");
+
+}
 .section1 .section2 {
   padding: 24px 32px;
+
 }
 
 .section {
@@ -226,10 +231,29 @@ li {
   padding: 32px 24px;
 }
 
+.section1-box {
+  background-color: #d7d7d7;
+}
+
  .section1-img {
   max-width: 100%;
   display: block;
   height: auto;
+}
+
+.section2-box {
+    background: #d7d7d7;
+    position: relative;
+    -webkit-animation: mymove 2s;
+    -webkit-animation-delay: 3ms; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s;
+    animation-delay: 500ms;
+    animation-fill-mode: inherit;
+}
+@-webkit-keyframes mymove {
+    from {bottom: 40px; background-color: #5877AD;}
+    to {bottom: 200px; background-color: #d7d7d7;}
 }
 
 .section2 {
@@ -263,6 +287,10 @@ li {
 
 /* @media Container1*/
 @media only screen and (max-width: 600px) {
+  .background1 {
+    background-image: none;
+  }
+
   .section1, .section2-img {
     display: none;
   }
@@ -277,6 +305,7 @@ li {
     max-width: 25rem;
     min-height: 18rem;
     border: none;
+    animation-fill-mode: inherit;
   }
 
   .p-box {
