@@ -120,6 +120,7 @@ li {
 .banner {
   display: flex;
   align-items: center;
+  background: linear-gradient(white, #5877AD)
 }
 
 .banner1 {
@@ -167,7 +168,7 @@ li {
 .banner-btn-p {
   padding: 8px;
   transition-property: box-shadow;
-  transition-duration: 1s;
+  transition-duration: 500ms;
   transition-delay: 0.5ms;
 }
 
@@ -223,11 +224,12 @@ li {
 
 
 /*container1*/
-.background1 {
+/*.background1 {
   background-image: url("../images/information-main.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-}
+
+}*/
  .section2 {
   padding: 24px 32px;
 
@@ -337,24 +339,29 @@ li {
 } /*end @media Container1*/
 
 /*Containerii*/
+
 .ii-h1 {
   text-align: center;
   padding: 1rem;
+  background: content-box radial-gradient(white, #5877AD);
 }
 
 .ii-section {
   display: flex;
   justify-content: space-around;
-
   flex-wrap: wrap;
   padding: 6rem;
+  background: linear-gradient(white, #5877AD);
 }
 
 .ii-box {
   max-width: 20rem;
   max-height: 39rem;
-  border: 2px solid #d7d7d7;
-  box-shadow: 10px 10px white;
+}
+
+.ii-p {
+  padding: 1rem;
+  background-color: white;
 }
 
 .ii-img-box {
@@ -367,15 +374,6 @@ li {
   width: 100%;
   height: auto;
   display: block;
-}
-
-.ii-p {
-  padding: 1rem;
-  background-color: white;
-}
-
-.ii-p-art {
-  line-height: .5;
 }
 
 .ii-section-mobile {
